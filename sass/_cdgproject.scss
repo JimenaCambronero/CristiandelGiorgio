@@ -1,0 +1,137 @@
+
+// declaracion de variables
+
+$size: 1em;
+@mixin mix ($padding, $align-items){
+    padding: $padding;
+    align-items: $align-items;
+}
+
+
+
+/* -------------------------------Estilo CDG Project---------------------------- */
+
+
+// se aplica sass - operaciones/
+
+.titulo{
+    color: $color-white;
+    letter-spacing: 0.1em;
+    padding-top: 0.9em ;
+    text-align: center;
+    font: {
+        family:'Courier New', Courier, monospace;
+        weight: normal;
+        size: $size + 0.8em;
+        }
+}
+
+.subtitulo{ 
+    @extend .titulo;
+    padding-top: 1.5em;
+    font-size: 1.5em;
+}
+
+.contenido-cdg{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    @include mix( $size *2 $size *2 $size/2, center);
+}
+
+.imagenes-cdg{
+    color: $color-white;
+    padding: 0.8em;
+    font-size: $size + 0.5em;
+    text-align: center;
+     a{
+         font-size: 1.5em;
+         padding: $size;
+         color: $color-white;
+         transition: color .5s
+     }
+     a:hover {
+        color: $color-light-yellow;
+      }
+ }
+
+.parrafo-cdg{
+    font: { 
+        family:'Courier New', Courier, monospace;
+        size: 0.6em;
+    }
+    color: $color-yellow;
+    letter-spacing: 0.1em;
+    padding-top: $size;
+    text-transform: uppercase;
+}
+
+.contenedor-descripcion{
+    color: $color-white;
+    font: { 
+        family:'Courier New', Courier, monospace;
+        size: $size;
+    }
+    text-indent: $size * 5;
+    text-align: justify;
+    line-height: 1.8em;
+    justify-content: center;
+    @include mix(0 5em 2em, center);
+    margin: 0;
+}
+    
+
+
+/*--------------- estilo Formulario de CONTACTO -------------*/
+.formulario{
+    background-color: $color-black;
+    padding: 3em 0 3em;
+}
+.container, .contact-form{   
+    width: 70%;  
+    border-style: inset; 
+    border-radius: 1em;
+}
+
+h4 {
+    color: $color-white;
+    text-align: center;
+    letter-spacing: 0.2em;
+}
+
+label{
+    font-size: 0.7em;
+    color: $color-white;
+}
+
+.form-control{
+    background-color: transparent;
+    font-size: 0.6em;
+    color: $color-white;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+}
+
+.form-control:hover{
+    background-color: $color-yellow;
+    font-size: 0.8em;
+}
+
+.btn-contacto{
+    background-color:$color-yellow;
+    font-size: 0.7em;
+    border-radius: 0.3em;
+    padding: 0.4em 0.7em;
+    cursor: pointer;
+    transition: background-color .5s;
+}
+
+.btn-contacto:hover{
+    background-color: $color-light-yellow;     
+}
+
+.botones{
+    display: flex;
+    justify-content: center;
+}

@@ -1,0 +1,26 @@
+
+
+
+
+@import "home";
+@import "thesecretkey";
+@import "galeria";
+@import "prensa";
+@import "aprendegratis";
+@import "cdgproject";
+@import "footer";
+
+
+$color-black:rgb(0, 0, 0);
+$color-white: rgb(255, 255, 255);
+$color-light-yellow:rgb(246, 213, 121);
+$color-yellow:rgb(230, 173, 15);
+
+
+$size: 1em;
+
+@mixin mix ($padding, $align-items){
+    padding: $padding;
+    align-items: $align-items;
+}
+

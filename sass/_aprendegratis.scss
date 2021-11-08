@@ -1,0 +1,28 @@
+/* -------------------------------Estilo APRENDE GRATIS---------------------------- */
+
+.titulo-aprende {
+    font-weight: 400;
+    text-align: center;
+    padding: 1.8em 0 0;
+}
+
+.subtitulo-aprende {
+    text-align: center;
+    margin: 0;
+    padding: 1.5em 0; 
+    font-size: 1.5em;
+    color: $color-white;
+
+}
+
+.contenedor-aprende-gratis{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 4em;
+}
+
+.contenedor-aprende-gratis > .parrafo {
+    padding: 0 5em 2em;
+}
+

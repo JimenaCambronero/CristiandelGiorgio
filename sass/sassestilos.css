@@ -1,0 +1,603 @@
+@charset "UTF-8";
+* {
+  padding: 0px;
+  margin: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+main {
+  font-family: 'Courier New', Courier, monospace;
+  background-color: black;
+  width: 100%;
+}
+
+/* ------------estilo MENU -------------- */
+.contenedor-nav {
+  width: 100%;
+  background: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2em 2em 1em;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.menu ul {
+  font-family: 'Courier New', Courier, monospace;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: right;
+}
+
+.menu ul li {
+  display: inline-block;
+}
+
+.menu ul li a {
+  display: block;
+  color: white;
+  padding: 0.5em 1rem;
+  text-decoration: none;
+  -webkit-transition: all 0.4s linear;
+  transition: all 0.4s linear;
+  border-radius: 5px;
+}
+
+.menu ul li a:hover {
+  color: #f6d579;
+  background: #292828;
+}
+
+/* ----- intento de responsive :( -------*/
+/* @media only screen and (max-whidth: 1035px) {
+.menu {
+    width: 100%;
+    margin-top: 1rem;
+    }   
+.menu ul li {
+    display: block;
+    }
+
+.menu ul li a {
+    display: block;
+    padding: 0.5em 0.5em;
+    } 
+} */
+/* ---------------------estilo portada -------------------------------------*/
+.contenedor-portada {
+  background-image: url("../imagenes/imagenfondo.jpg");
+  background-size: 100%;
+  -webkit-animation: movimiento 15s linear infinite alternate;
+          animation: movimiento 15s linear infinite alternate;
+}
+
+@-webkit-keyframes movimiento {
+  from {
+    background-position: bottom left;
+  }
+  to {
+    background-position: top right;
+  }
+}
+
+@keyframes movimiento {
+  from {
+    background-position: bottom left;
+  }
+  to {
+    background-position: top right;
+  }
+}
+
+.contenedor-detalles {
+  width: 100%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.detalles {
+  width: 100%;
+  max-width: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.detalles img {
+  width: 90%;
+  height: 90%;
+  margin: 2.5em;
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+  color: white;
+  font-size: 4.5em;
+  text-shadow: -0.5px 0.5px 0 #ecc02d, -1.5px 2px #acacac;
+}
+
+.subtitulo-banner {
+  color: white;
+  font-size: 2em;
+  text-shadow: -0.5px 0.5px 0 #ecc02d, -1.5px 2px #acacac;
+}
+
+/* ---------------------estilo SOBRE MI -------------------------------------*/
+h2, .sobre-mi {
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: normal;
+  font-size: 1.8em;
+  letter-spacing: 0.1em;
+  margin-bottom: 0px;
+  text-align: center;
+  padding: 0.8em;
+}
+
+.contenedor-presentacion {
+  color: white;
+  font-size: 1em;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: justify;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 3em;
+  margin-bottom: 0px;
+  padding-bottom: 5em;
+  text-indent: 5em;
+  line-height: 25px;
+  margin: 0 4em;
+}
+
+/*------------------------ Estilo THE SECRET KEY -------------------------*/
+.encabezado-tsk, .subtitulo-tsk {
+  color: white;
+  text-align: center;
+  padding-top: 1.5em;
+}
+
+.parrafo {
+  color: white;
+  text-align: justify;
+  padding: 0 0 1em 1em;
+}
+
+.contenedor-tsk {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  padding: 2.5em 5em 0;
+  gap: 1em;
+}
+
+iframe {
+  -webkit-box-shadow: 12px 10px 3px black;
+          box-shadow: 12px 10px 3px black;
+}
+
+/* estilo Boton comprar The Secret Key */
+a.boton-tiendaNube {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 30em;
+  background-color: #e6ad0f;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 500;
+  font-size: 0.8em;
+  letter-spacing: 0.6em;
+  color: #242423;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: none;
+  margin-top: 3.5em;
+  margin-left: 10em;
+  padding: 1.5em;
+  border-radius: 2em;
+  cursor: pointer;
+  text-indent: 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: height 2s;
+  transition: height 2s;
+}
+
+a.boton-tiendaNube:hover {
+  background-image: radial-gradient(circle at 33.67% 21.72%, #ffee52 0, #ffe151 8.33%, #ffd250 16.67%, #ffc251 25%, #ffb053 33.33%, #ff9d53 41.67%, #f28953 50%, #df7652 58.33%, #ce6751 66.67%, #bf5a51 75%, #b25052 83.33%, #a64853 91.67%, #9d4356 100%);
+  -webkit-transition-delay: 0.5s;
+          transition-delay: 0.5s;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+/*-----Testimonial-------*/
+/*------------------------------Estilo Galeria----------------------------*/
+.titulo-galeria {
+  font-weight: 400;
+  text-align: center;
+  padding: 1.8em 0 0;
+}
+
+.animate__bounce {
+  --animate-repeat: 2;
+  --animate-duration: 0.5s;
+}
+
+.subtitulo-galeria {
+  text-align: center;
+  margin: 0;
+  padding: 1.5em 0;
+  font-size: 1.5em;
+  color: white;
+}
+
+.contenedor-galeria {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -webkit-column-gap: 0.5em;
+          column-gap: 0.5em;
+  row-gap: 0.5em;
+  text-align: center;
+  padding-bottom: 1em;
+  padding-left: 1.5em;
+}
+
+.contenedor-imagen {
+  width: 400px;
+  height: 350px;
+  background: #1b1b1b;
+  -webkit-box-shadow: 0 0 5px 0 rgba(8, 8, 8, 0.438);
+          box-shadow: 0 0 5px 0 rgba(8, 8, 8, 0.438);
+  margin: 0.5em;
+  border-radius: 0.3em;
+}
+
+p.img-descripción {
+  font-family: 'Courier New', Courier, monospace;
+  padding: 0.5em;
+  font-size: 0.8em;
+  text-align: center;
+  color: white;
+}
+
+.contenedor-galeria img {
+  width: 350px;
+  height: 250px;
+  margin: 1em;
+  -o-object-fit: cover;
+     object-fit: cover;
+  cursor: pointer;
+  -webkit-filter: blur(1px);
+          filter: blur(1px);
+  -webkit-transition: -webkit-filter 0.3s ease-in;
+  transition: -webkit-filter 0.3s ease-in;
+  transition: filter 0.3s ease-in;
+  transition: filter 0.3s ease-in, -webkit-filter 0.3s ease-in;
+}
+
+.contenedor-galeria img:hover {
+  -webkit-filter: brightness(100%);
+          filter: brightness(100%);
+  -webkit-filter: blur(0px);
+          filter: blur(0px);
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+}
+
+/* -------------------------------Estilo APRENDE GRATIS---------------------------- */
+.titulo-aprende {
+  font-weight: 400;
+  text-align: center;
+  padding: 1.8em 0 0;
+}
+
+.subtitulo-aprende {
+  text-align: center;
+  margin: 0;
+  padding: 1.5em 0;
+  font-size: 1.5em;
+  color: white;
+}
+
+.contenedor-aprende-gratis {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 4em;
+}
+
+.contenedor-aprende-gratis > .parrafo {
+  padding: 0 5em 2em;
+}
+
+/* -------------------------------Estilo CDG Project---------------------------- */
+.titulo, .subtitulo {
+  color: white;
+  letter-spacing: 0.1em;
+  padding-top: 0.9em;
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: normal;
+  font-size: 1.8em;
+}
+
+.subtitulo {
+  padding-top: 1.5em;
+  font-size: 1.5em;
+}
+
+.contenido-cdg {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 2em 2em 0.5em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.imagenes-cdg {
+  color: white;
+  padding: 0.8em;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.imagenes-cdg a {
+  font-size: 1.5em;
+  padding: 1em;
+  color: white;
+  -webkit-transition: color .5s;
+  transition: color .5s;
+}
+
+.imagenes-cdg a:hover {
+  color: #f6d579;
+}
+
+.parrafo-cdg {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.6em;
+  color: #e6ad0f;
+  letter-spacing: 0.1em;
+  padding-top: 1em;
+  text-transform: uppercase;
+}
+
+.contenedor-descripcion {
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1em;
+  text-indent: 5em;
+  text-align: justify;
+  line-height: 1.8em;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0 5em 2em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+}
+
+/*--------------- estilo Formulario de CONTACTO -------------*/
+.formulario {
+  background-color: black;
+  padding: 3em 0 3em;
+}
+
+.container, .contact-form {
+  width: 70%;
+  border-style: inset;
+  border-radius: 1em;
+}
+
+h4 {
+  color: white;
+  text-align: center;
+  letter-spacing: 0.2em;
+}
+
+label {
+  font-size: 0.7em;
+  color: white;
+}
+
+.form-control {
+  background-color: transparent;
+  font-size: 0.6em;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+
+.form-control:hover {
+  background-color: #e6ad0f;
+  font-size: 0.8em;
+}
+
+.btn-contacto {
+  background-color: #e6ad0f;
+  font-size: 0.7em;
+  border-radius: 0.3em;
+  padding: 0.4em 0.7em;
+  cursor: pointer;
+  -webkit-transition: background-color .5s;
+  transition: background-color .5s;
+}
+
+.btn-contacto:hover {
+  background-color: #f6d579;
+}
+
+.botones {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/* -------------------------------Estilo FOTTER---------------------------- */
+footer {
+  background-color: rgba(0, 0, 0, 0.932);
+  padding: 1em 0;
+}
+
+.contenedor-footer {
+  padding: 1em 3em 0;
+}
+
+.columna {
+  width: 100%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.footer-col {
+  width: 33%;
+  padding: 0 1em;
+}
+
+.footer-col h5 {
+  font-size: 1em;
+  color: rgba(255, 255, 255, 0.952);
+  text-transform: capitalize;
+  margin-bottom: 1.2em;
+  font-family: 'Courier New', Courier, monospace;
+  position: relative;
+}
+
+.footer-col h5::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -0.3em;
+  background-color: #e6ad0f;
+  height: 0.2em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 2.5em;
+}
+
+.footer-col ul li :not(:last-child) {
+  margin-bottom: 1.5em;
+}
+
+.footer-col ul li a {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.8em;
+  text-transform: capitalize;
+  text-decoration: none;
+  padding: 0.1em;
+  color: white;
+  display: block;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+  color: #e6ad0f;
+  padding-left: 0.6em;
+}
+
+.footer-col .links-redes a {
+  display: inline-block;
+  height: 2em;
+  width: 2em;
+  background-color: rgba(255, 196, 0, 0.2);
+  margin: 0 1em 1em 0;
+  text-align: center;
+  line-height: 2.2em;
+  border-radius: 50px;
+  color: white;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.footer-col .links-redes a:hover {
+  color: #ffc400;
+  background-color: white;
+}
+
+.copy {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+p.copy-parrafo {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.6em;
+  letter-spacing: 0.1em;
+  color: #f6d579;
+  margin-bottom: 0;
+}
+
+.menu-footer a:hover {
+  color: #f5cb5c;
+}
+/*# sourceMappingURL=sassestilos.css.map */
