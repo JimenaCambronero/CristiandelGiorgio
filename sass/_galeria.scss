@@ -1,9 +1,14 @@
 /*------------------------------Estilo Galeria----------------------------*/
 
 .titulo-galeria {
-    font-weight: 400;
+    font-family: $font-family2;
+    font-weight: normal;
+    color: $color-white;
+    font-size: 3em;
+    letter-spacing: 0.1em;
     text-align: center;
-    padding: 1.8em 0 0;
+    padding: 1em;
+    margin-bottom: 0px;
 }
 
 .animate__bounce {
@@ -12,12 +17,11 @@
 }
 
 .subtitulo-galeria {
-    text-align: center;
-    margin: 0;
-    padding: 1.5em 0; 
+    @extend .titulo-galeria;
     font-size: 1.5em;
-    color: $color-white;
-
+    padding: 0 0 0.5em;
+    margin: 0;
+    font-size: 1.5em;
 }
 
 .contenedor-galeria {
@@ -40,11 +44,13 @@
 }
 
 p.img-descripción{
-    font-family:'Courier New', Courier, monospace;
+    font-family:$font-family2;
+    color:$color-white;
     padding: 0.5em;
     font-size: 0.8em;
+    letter-spacing: 0.1em;
     text-align: center;
-    color:$color-white ;
+    
 }
 
 .contenedor-galeria img{

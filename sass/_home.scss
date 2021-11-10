@@ -4,6 +4,10 @@ $color-white: rgb(255, 255, 255);
 $color-light-yellow:rgb(246, 213, 121);
 $color-yellow:rgb(230, 173, 15);
 
+$font-family2: 'Roboto', sans-serif;
+$font-family: 'Roboto Condensed', sans-serif;
+
+
 *{
     padding:0px;
     margin:0px;
@@ -11,7 +15,6 @@ $color-yellow:rgb(230, 173, 15);
 }
 
 main{
-    font-family:'Courier New', Courier, monospace;
     background-color:$color-black;
     width: 100%;
 }
@@ -75,6 +78,7 @@ main{
 /* ---------------------estilo portada -------------------------------------*/
 .contenedor-portada{
     background-image: url("../imagenes/imagenfondo.jpg");
+    background-repeat: no-repeat;
     background-size: 100%;
     animation: movimiento 15s linear infinite alternate;
 }
@@ -108,46 +112,49 @@ main{
     width: 90%;
     height: 90%;
     margin: 2.5em;
+    
 }
 
 h1{
-    text-align: center;
-    font-family:'Courier New', Courier, monospace;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: bold;
     color:$color-white;
-    font-size: 4.5em;
-    text-shadow: -0.5px 0.5px 0 rgb(236, 192, 45), -1.5px 2px rgb(172, 172, 172);
+    font-size: 4em;
+    text-align: center;
+    text-shadow: -0.5px 0.5px 0 rgb(8, 8, 8), -1.5px 2px rgb(172, 172, 172);
 }
 
 .subtitulo-banner{
+    font-family: $font-family2;
     color:$color-white;
     font-size: 2em;
-    text-shadow: -0.5px 0.5px 0 rgb(236, 192, 45), -1.5px 2px rgb(172, 172, 172);
+    text-shadow: -0.5px 0.5px 0 rgb(5, 5, 5), -1.5px 2px rgb(172, 172, 172);
 }
 
 /* ---------------------estilo SOBRE MI -------------------------------------*/
-h2, .sobre-mi{
-    color: $color-white;
-    font-family:'Courier New', Courier, monospace;
+.sobre-mi{
+    font-family: $font-family2;
     font-weight: normal;
-    font-size: 1.8em;
+    color: $color-white;
+    font-size: 3em;
     letter-spacing: 0.1em;
-    margin-bottom: 0px;
     text-align: center;
-    padding: 0.8em;
+    padding: 1em;
+    margin-bottom: 0px;
 }
 
 .contenedor-presentacion {
+    font-family: $font-family2;
     color: $color-white;
-    font-size: 1em;
+    font-size: 1.2em;
     justify-content: center;
     text-align: justify;
     align-items: center;
-    margin: 3em;
-    margin-bottom: 0px;
     padding-bottom: 5em;
-    text-indent: 5em;
-    line-height: 25px;
+    text-indent: 5em; 
+    line-height: 2em;
     margin: 0 4em;
+    margin-bottom: 0px;
 }
 
 

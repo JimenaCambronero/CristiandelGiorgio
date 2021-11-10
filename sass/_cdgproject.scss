@@ -20,7 +20,7 @@ $size: 1em;
     padding-top: 0.9em ;
     text-align: center;
     font: {
-        family:'Courier New', Courier, monospace;
+        family:$font-family2;
         weight: normal;
         size: $size + 0.8em;
         }
@@ -28,8 +28,9 @@ $size: 1em;
 
 .subtitulo{ 
     @extend .titulo;
-    padding-top: 1.5em;
     font-size: 1.5em;
+    padding: 0.5em 0 0.8em;
+    margin: 0;
 }
 
 .contenido-cdg{
@@ -67,17 +68,17 @@ $size: 1em;
 }
 
 .contenedor-descripcion{
+    font-family: $font-family2;
     color: $color-white;
-    font: { 
-        family:'Courier New', Courier, monospace;
-        size: $size;
-    }
-    text-indent: $size * 5;
-    text-align: justify;
-    line-height: 1.8em;
+    font-size: 1.2em;
     justify-content: center;
-    @include mix(0 5em 2em, center);
-    margin: 0;
+    text-align: justify;
+    align-items: center;
+    padding-bottom: 5em;
+    text-indent: 5em; 
+    line-height: 2em;
+    margin: 0 4em;
+    margin-bottom: 0px;
 }
     
 
@@ -87,7 +88,7 @@ $size: 1em;
     background-color: $color-black;
     padding: 3em 0 3em;
 }
-.container, .contact-form{   
+.contact-form{   
     width: 70%;  
     border-style: inset; 
     border-radius: 1em;

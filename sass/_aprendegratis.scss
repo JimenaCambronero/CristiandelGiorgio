@@ -1,18 +1,22 @@
 /* -------------------------------Estilo APRENDE GRATIS---------------------------- */
 
 .titulo-aprende {
-    font-weight: 400;
+    font-family: $font-family2;
+    font-weight: normal;
+    color: $color-white;
+    font-size: 3em;
+    letter-spacing: 0.1em;
     text-align: center;
-    padding: 1.8em 0 0;
+    padding: 1em;
+    margin-bottom: 0px;
 }
 
 .subtitulo-aprende {
-    text-align: center;
-    margin: 0;
-    padding: 1.5em 0; 
+    @extend .titulo-aprende;
     font-size: 1.5em;
-    color: $color-white;
-
+    padding: 0 0 0.5em;
+    margin: 0;
+    font-size: 1.5em;
 }
 
 .contenedor-aprende-gratis{
@@ -23,6 +27,16 @@
 }
 
 .contenedor-aprende-gratis > .parrafo {
-    padding: 0 5em 2em;
+    font-family: $font-family2;
+    color: $color-white;
+    font-size: 1.2em;
+    justify-content: center;
+    text-align: justify;
+    align-items: center;
+    padding-bottom: 5em;
+    text-indent: 5em; 
+    line-height: 2em;
+    margin: 0 4em;
+    margin-bottom: 0px;;
 }
 

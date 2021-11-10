@@ -7,7 +7,6 @@
 }
 
 main {
-  font-family: 'Courier New', Courier, monospace;
   background-color: black;
   width: 100%;
 }
@@ -75,6 +74,7 @@ main {
 /* ---------------------estilo portada -------------------------------------*/
 .contenedor-portada {
   background-image: url("../imagenes/imagenfondo.jpg");
+  background-repeat: no-repeat;
   background-size: 100%;
   -webkit-animation: movimiento 15s linear infinite alternate;
           animation: movimiento 15s linear infinite alternate;
@@ -134,34 +134,37 @@ main {
 }
 
 h1 {
-  text-align: center;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: bold;
   color: white;
-  font-size: 4.5em;
-  text-shadow: -0.5px 0.5px 0 #ecc02d, -1.5px 2px #acacac;
+  font-size: 4em;
+  text-align: center;
+  text-shadow: -0.5px 0.5px 0 #080808, -1.5px 2px #acacac;
 }
 
 .subtitulo-banner {
+  font-family: "Roboto", sans-serif;
   color: white;
   font-size: 2em;
-  text-shadow: -0.5px 0.5px 0 #ecc02d, -1.5px 2px #acacac;
+  text-shadow: -0.5px 0.5px 0 #050505, -1.5px 2px #acacac;
 }
 
 /* ---------------------estilo SOBRE MI -------------------------------------*/
-h2, .sobre-mi {
-  color: white;
-  font-family: 'Courier New', Courier, monospace;
+.sobre-mi {
+  font-family: "Roboto", sans-serif;
   font-weight: normal;
-  font-size: 1.8em;
+  color: white;
+  font-size: 3em;
   letter-spacing: 0.1em;
-  margin-bottom: 0px;
   text-align: center;
-  padding: 0.8em;
+  padding: 1em;
+  margin-bottom: 0px;
 }
 
 .contenedor-presentacion {
+  font-family: "Roboto", sans-serif;
   color: white;
-  font-size: 1em;
+  font-size: 1.2em;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -169,23 +172,36 @@ h2, .sobre-mi {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 3em;
-  margin-bottom: 0px;
   padding-bottom: 5em;
   text-indent: 5em;
-  line-height: 25px;
+  line-height: 2em;
   margin: 0 4em;
+  margin-bottom: 0px;
 }
 
 /*------------------------ Estilo THE SECRET KEY -------------------------*/
 .encabezado-tsk, .subtitulo-tsk {
   color: white;
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+  font-size: 3em;
+  letter-spacing: 0.1em;
   text-align: center;
-  padding-top: 1.5em;
+  padding: 1em;
+  margin-bottom: 0px;
+}
+
+.subtitulo-tsk {
+  font-size: 1.5em;
+  padding: 0 0 0.5em;
 }
 
 .parrafo {
+  font-family: "Roboto", sans-serif;
   color: white;
+  font-size: 1.2em;
+  text-indent: 5em;
+  line-height: 2em;
   text-align: justify;
   padding: 0 0 1em 1em;
 }
@@ -243,12 +259,16 @@ a.boton-tiendaNube:hover {
           transform: scale(1.2);
 }
 
-/*-----Testimonial-------*/
 /*------------------------------Estilo Galeria----------------------------*/
-.titulo-galeria {
-  font-weight: 400;
+.titulo-galeria, .subtitulo-galeria {
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+  color: white;
+  font-size: 3em;
+  letter-spacing: 0.1em;
   text-align: center;
-  padding: 1.8em 0 0;
+  padding: 1em;
+  margin-bottom: 0px;
 }
 
 .animate__bounce {
@@ -257,11 +277,10 @@ a.boton-tiendaNube:hover {
 }
 
 .subtitulo-galeria {
-  text-align: center;
-  margin: 0;
-  padding: 1.5em 0;
   font-size: 1.5em;
-  color: white;
+  padding: 0 0 0.5em;
+  margin: 0;
+  font-size: 1.5em;
 }
 
 .contenedor-galeria {
@@ -288,11 +307,12 @@ a.boton-tiendaNube:hover {
 }
 
 p.img-descripción {
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Roboto", sans-serif;
+  color: white;
   padding: 0.5em;
   font-size: 0.8em;
+  letter-spacing: 0.1em;
   text-align: center;
-  color: white;
 }
 
 .contenedor-galeria img {
@@ -319,19 +339,83 @@ p.img-descripción {
           transform: scale(1.15);
 }
 
-/* -------------------------------Estilo APRENDE GRATIS---------------------------- */
-.titulo-aprende {
-  font-weight: 400;
+.titulo-prensa, .parrafo-prensa, .card-body .card-title, .card-body .card-text, .card-footer .text-muted {
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+  color: white;
+  font-size: 3em;
+  letter-spacing: 0.1em;
   text-align: center;
-  padding: 1.8em 0 0;
+  padding: 1em;
+  margin-bottom: 0px;
+}
+
+.parrafo-prensa {
+  font-size: 1.5em;
+  padding: 0 0 0.9em;
+  margin: 0;
+  font-size: 1.5em;
+}
+
+.container {
+  width: 90%;
+}
+
+.card {
+  background-color: black;
+}
+
+.card:hover {
+  border: 0.1px solid #f6d579;
+}
+
+.row {
+  margin: 0;
+  padding: 0 4em 2em 4em;
+}
+
+.card-body .card-title {
+  font-size: 1em;
+}
+
+.card-body .card-text {
+  font-size: 0.7em;
+  letter-spacing: 0.1em;
+  padding: 0;
+}
+
+.card-footer {
+  text-align: end;
+  border-top: none;
+}
+
+.card-footer .text-muted {
+  font-size: 0.7em;
+}
+
+.card-footer .btn {
+  background-color: #e6ad0f;
+  border: none;
+  font-size: 0.7em;
+}
+
+/* -------------------------------Estilo APRENDE GRATIS---------------------------- */
+.titulo-aprende, .subtitulo-aprende {
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+  color: white;
+  font-size: 3em;
+  letter-spacing: 0.1em;
+  text-align: center;
+  padding: 1em;
+  margin-bottom: 0px;
 }
 
 .subtitulo-aprende {
-  text-align: center;
-  margin: 0;
-  padding: 1.5em 0;
   font-size: 1.5em;
-  color: white;
+  padding: 0 0 0.5em;
+  margin: 0;
+  font-size: 1.5em;
 }
 
 .contenedor-aprende-gratis {
@@ -349,7 +433,21 @@ p.img-descripción {
 }
 
 .contenedor-aprende-gratis > .parrafo {
-  padding: 0 5em 2em;
+  font-family: "Roboto", sans-serif;
+  color: white;
+  font-size: 1.2em;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: justify;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 5em;
+  text-indent: 5em;
+  line-height: 2em;
+  margin: 0 4em;
+  margin-bottom: 0px;
 }
 
 /* -------------------------------Estilo CDG Project---------------------------- */
@@ -358,14 +456,15 @@ p.img-descripción {
   letter-spacing: 0.1em;
   padding-top: 0.9em;
   text-align: center;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: "Roboto", sans-serif;
   font-weight: normal;
   font-size: 1.8em;
 }
 
 .subtitulo {
-  padding-top: 1.5em;
   font-size: 1.5em;
+  padding: 0.5em 0 0.8em;
+  margin: 0;
 }
 
 .contenido-cdg {
@@ -414,20 +513,21 @@ p.img-descripción {
 }
 
 .contenedor-descripcion {
+  font-family: "Roboto", sans-serif;
   color: white;
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 1em;
-  text-indent: 5em;
-  text-align: justify;
-  line-height: 1.8em;
+  font-size: 1.2em;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 0 5em 2em;
+  text-align: justify;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 0;
+  padding-bottom: 5em;
+  text-indent: 5em;
+  line-height: 2em;
+  margin: 0 4em;
+  margin-bottom: 0px;
 }
 
 /*--------------- estilo Formulario de CONTACTO -------------*/
@@ -436,7 +536,7 @@ p.img-descripción {
   padding: 3em 0 3em;
 }
 
-.container, .contact-form {
+.contact-form {
   width: 70%;
   border-style: inset;
   border-radius: 1em;

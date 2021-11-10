@@ -1,3 +1,69 @@
+$color-black:rgb(0, 0, 0);
+$color-white: rgb(255, 255, 255);
+$color-light-yellow:rgb(246, 213, 121);
+$color-yellow:rgb(230, 173, 15);
 
+$font-family2: 'Roboto', sans-serif;
+$font-family: 'Roboto Condensed', sans-serif;
 
-// seccion en contruccion
+.titulo-prensa{
+    font-family: $font-family2;
+    font-weight: normal;
+    color: $color-white;
+    font-size: 3em;
+    letter-spacing: 0.1em;
+    text-align: center;
+    padding: 1em;
+    margin-bottom: 0px;
+}
+
+.parrafo-prensa{
+    @extend .titulo-prensa;
+    font-size: 1.5em;
+    padding: 0 0 0.9em;
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.container{
+    width: 90%;
+}
+.card{
+    background-color: $color-black;
+}
+
+.card:hover{  
+    border: 0.1px solid $color-light-yellow;
+}
+
+.row{
+    margin:0;
+    padding: 0 4em 2em 4em;
+}
+
+.card-body{ 
+        .card-title{
+            @extend .titulo-prensa;
+            font-size: 1em ;
+            }
+        .card-text{
+            @extend .titulo-prensa;
+            font-size: 0.7em;
+            letter-spacing: 0.1em;
+            padding: 0;
+            }
+}
+
+.card-footer{
+    text-align: end;
+    border-top: none;
+        .text-muted{
+            @extend .titulo-prensa;
+            font-size: 0.7em;
+        }
+        .btn{
+            background-color: $color-yellow;
+            border:none;
+            font-size: 0.7em;
+        }
+}
