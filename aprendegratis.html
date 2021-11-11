@@ -10,13 +10,14 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;700&family=Roboto:wght@100&display=swap" rel="stylesheet">
-  <!-- enlace bootstrap -->
+  <!-- enlace animación -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<!-- enlace bootstrap -->
   <link rel="stylesheet" href="./css/bootstrap.min.css">
   <!-- estilo CSS SASS -->
   <link rel="stylesheet" href="./sass/sassestilos.css">
   <!-- keywords o palabras claves -->
-  <meta name="descripcion" content="Cristian del Giorgio tecladista y compositor. Creador del Método de enseñanaza The Secret Key. Tecladista de CDJ Project.">
-  <meta name="keywords" content="tecladista, musico, compositor, the secret key,">
+  <meta name="descripcion" content="Cristian del Giorgio, tecladista y compositor cuenta con un canal de YouTube donde ofrece una cápsula gratuita para todo aquel que desea comenzar a dar sus primeros pasos con el teclado, es gratuita y te enseña desde cero, hay tips y material complementario para aquellos tecladistas más avanzados">
   <!-- titulo -->
   <title> Aprendé a tocar el teclado conmigo </title>
 </head>
@@ -42,23 +43,28 @@
     <!-- inicio MAIN -->
 <!-- Inicio Contenido Página -->
     <main>
-        <h2 class="titulo-aprende">Aprende a tocar el Teclado</h2>
-            <h3 class="subtitulo-aprende">Mi Cápsula Gratuita para Principiantes</h3> 
+        <h1 class="titulo-aprende">Aprende a tocar el Teclado</h1>
+            <h2 class="subtitulo-aprende">Mi Cápsula Gratuita para Principiantes</h2> 
         <div class="contenedor-aprende-gratis">
             <div class="parrafo">
                 <p>En mi canal de YouTube vas a encontrar a mi cápsula llamada <i> "Pequeños Grandes Tips". </i> ¿De que se trata? Es una compilación de videos tutoriales que detallan como mejorar tu performance desde el nivel más inicial, donde vas a encontrar lecciones y ejercicios para nivel básico que te prepara para encarar a los The Secret Key.
                 Aprendé correctamente como dar tus primeros paso en este maravilloso instrumento. Además vas a encontrar un monton de videos con tips más avanzados, challenge, entrevistas, participaciones y la explicación de como tocar esos temas conocidos por todos! de una forma práctica y sencilla! No dejes de Suscribirte y activar la campanita para no perderte ninguno de los videos que vamos subiendo semana a semana.</p>
             </div>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/0SUJncNLpJU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
+        </div>    
     </main>
+    <section>
+        <div data-aos="fade-right">
+            <p class="frase">..."El talento no es más ni menos que una fuente inagotable de auto superación constante"...</p>
+        </div>
+    </section>
 <!-- Fin Contenido Página -->
 <!-- Inicio Footer -->
     <footer>
         <div class="contenedor-footer"> 
             <div class="columna">
                 <div class="footer-col"> 
-                    <h5>Menu</h5>
+                    <h4>Menu</h4>
                     <ul>
                         <li><a href="index.html">Home</a></li>
                         <li><a href="thesecretkey.html">The Secret Key</a></li>
@@ -67,7 +73,7 @@
                     </ul>
                 </div>
                 <div class="footer-col"> 
-                    <h5>Menu</h5>
+                    <h4>Menu</h4>
                     <ul>
                         <li><a href="aprendegratis.html">Aprende a tocar el Teclado</a></li>
                         <li><a href="cdgproject.html">CDG Project</a></li>
@@ -76,7 +82,7 @@
                     </ul>
                 </div>
                 <div class="footer-col"> 
-                    <h5>Redes Sociales</h5>
+                    <h4>Redes Sociales</h4>
                     <div class="links-redes">
                         <ul>
                             <li><a href="https://www.facebook.com/cristiandelgiorgiomusic" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
@@ -93,6 +99,12 @@
         </div> 
     </footer>
     <!-- fin del FOOTER -->
+    <!-- scrip animación -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <!-- script bootstrasp -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
     <script src="./js/bootstrap.min.js"></script>
     </body>

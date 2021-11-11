@@ -133,7 +133,7 @@ main {
   margin: 2.5em;
 }
 
-h1 {
+.titulo-banner {
   font-family: 'Roboto Condensed', sans-serif;
   font-weight: bold;
   color: white;
@@ -177,6 +177,10 @@ h1 {
   line-height: 2em;
   margin: 0 4em;
   margin-bottom: 0px;
+}
+
+.contenedor-presentacion p {
+  margin-bottom: 0;
 }
 
 /*------------------------ Estilo THE SECRET KEY -------------------------*/
@@ -299,9 +303,9 @@ a.boton-tiendaNube:hover {
 .contenedor-imagen {
   width: 400px;
   height: 350px;
-  background: #1b1b1b;
-  -webkit-box-shadow: 0 0 5px 0 rgba(8, 8, 8, 0.438);
-          box-shadow: 0 0 5px 0 rgba(8, 8, 8, 0.438);
+  background: #131313;
+  -webkit-box-shadow: 0 0 5px 0 rgba(24, 23, 23, 0.767);
+          box-shadow: 0 0 5px 0 rgba(24, 23, 23, 0.767);
   margin: 0.5em;
   border-radius: 0.3em;
 }
@@ -413,7 +417,7 @@ p.img-descripción {
 
 .subtitulo-aprende {
   font-size: 1.5em;
-  padding: 0 0 0.5em;
+  padding: 0 0 1em;
   margin: 0;
   font-size: 1.5em;
 }
@@ -448,6 +452,21 @@ p.img-descripción {
   line-height: 2em;
   margin: 0 4em;
   margin-bottom: 0px;
+}
+
+section {
+  background-color: black;
+}
+
+section .frase {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 1.5em;
+  font-style: oblique;
+  text-align: center;
+  color: #f6d579;
+  letter-spacing: 0.1em;
+  margin-bottom: 0;
+  padding: 1em;
 }
 
 /* -------------------------------Estilo CDG Project---------------------------- */
@@ -542,7 +561,7 @@ p.img-descripción {
   border-radius: 1em;
 }
 
-h4 {
+h3 {
   color: white;
   text-align: center;
   letter-spacing: 0.2em;
@@ -620,7 +639,13 @@ ul {
   padding: 0 1em;
 }
 
-.footer-col h5 {
+h4 {
+  color: white;
+  text-align: inherit;
+  letter-spacing: 0.2em;
+}
+
+.footer-col h4 {
   font-size: 1em;
   color: rgba(255, 255, 255, 0.952);
   text-transform: capitalize;
@@ -629,7 +654,7 @@ ul {
   position: relative;
 }
 
-.footer-col h5::before {
+.footer-col h4::before {
   content: "";
   position: absolute;
   left: 0;

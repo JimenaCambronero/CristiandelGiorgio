@@ -1,13 +1,4 @@
 
-$color-black:rgb(0, 0, 0);
-$color-white: rgb(255, 255, 255);
-$color-light-yellow:rgb(246, 213, 121);
-$color-yellow:rgb(230, 173, 15);
-
-$font-family2: 'Roboto', sans-serif;
-$font-family: 'Roboto Condensed', sans-serif;
-
-
 *{
     padding:0px;
     margin:0px;
@@ -115,7 +106,7 @@ main{
     
 }
 
-h1{
+.titulo-banner{
     font-family: 'Roboto Condensed', sans-serif;
     font-weight: bold;
     color:$color-white;
@@ -155,6 +146,9 @@ h1{
     line-height: 2em;
     margin: 0 4em;
     margin-bottom: 0px;
+        p{
+            margin-bottom: 0;
+        }
 }
 
 

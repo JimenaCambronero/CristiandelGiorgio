@@ -1,3 +1,4 @@
+
 /* -------------------------------Estilo FOTTER---------------------------- */
 footer{
     background-color: rgba(0, 0, 0, 0.932);
@@ -24,8 +25,13 @@ ul {
     width: 33%;
     padding: 0 1em;
 }
+h4 {
+    color:$color-white;
+    text-align: inherit;
+    letter-spacing: 0.2em;
+}
 
-.footer-col h5 {
+.footer-col h4 {
     font-size: 1em;
     color: rgba(255, 255, 255, 0.952);
     text-transform: capitalize;
@@ -34,7 +40,7 @@ ul {
     position: relative;
 }
 
-.footer-col h5::before{
+.footer-col h4::before{
     content: "";
     position: absolute;
     left: 0;
