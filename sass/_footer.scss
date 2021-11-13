@@ -104,3 +104,18 @@ p.copy-parrafo {
 .menu-footer a:hover{
     color: rgb(245, 203, 92);
 } 
+
+// Mobile ------
+@media (max-width:376px) {
+    .contenedor-footer{
+        padding: 1em 1em 0;
+    } 
+    p.copy-parrafo{
+        font-size: 0.4em;
+    }
+    .footer-col {
+        h4{
+            font-size: 0.8em;
+        }
+    }
+}
