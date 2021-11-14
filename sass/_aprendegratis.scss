@@ -33,12 +33,12 @@
     justify-content: center;
     text-align: justify;
     align-items: center;
-    padding-bottom: 5em;
+    padding-bottom: 1em;
     text-indent: 5em; 
     line-height: 2em;
-    margin: 0 4em;
-    margin-bottom: 0px;;
+    margin: 0 4em 0;
 }
+
 section{
     background-color: $color-black;
         .frase{
@@ -51,4 +51,49 @@ section{
         margin-bottom: 0;
         padding: $size;
         }
+}
+
+// medidas 
+@media (max-width:768px){
+    .titulo-aprende {
+        font-size: 2em;  
+    }
+
+    .subtitulo-aprende {
+        font-size: 1.5em;   
+    }
+
+    .contenedor-aprende-gratis{
+        display: flex;
+        padding-bottom: 2em;
+    }
+
+    .contenedor-aprende-gratis > .parrafo {
+        font-size: 1.3em;
+        margin: 0 3em;
+    }
+}
+
+// medias mobile-------
+@media (max-width:376px){
+    .titulo-aprende {
+        font-size: 1em;  
+    }
+
+    .subtitulo-aprende {
+        font-size: 0.8em;   
+    }
+
+    .contenedor-aprende-gratis{
+        padding-bottom: 1em;
+    }
+
+    .contenedor-aprende-gratis > .parrafo {
+        font-size: 0.7em;
+        margin: 0 2em;
+    }
+
+    .frase{
+        font-size: 1em;
+    }
 }

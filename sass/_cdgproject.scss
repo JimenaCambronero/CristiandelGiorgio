@@ -46,7 +46,7 @@
       }
  }
 
-.parrafo-cdg{
+.parrafo-album{
     font: { 
         family:'Courier New', Courier, monospace;
         size: 0.6em;
@@ -62,9 +62,8 @@
     color: $color-white;
     font-size: 1.2em;
     justify-content: center;
-    text-align: justify;
     align-items: center;
-    padding-bottom: 5em;
+    padding-bottom: 1em;
     text-indent: 5em; 
     line-height: 2em;
     margin: 0 4em;
@@ -76,10 +75,15 @@
 /*--------------- estilo Formulario de CONTACTO -------------*/
 .formulario{
     background-color: $color-black;
-    padding: 3em 0 3em;
+    padding: 1em 0 3em;
 }
-.contact-form{   
-    width: 70%;  
+
+.row {
+    margin: 0;
+    padding: 1em 1em 1em;
+}
+
+.contact-form{    
     border-style: inset; 
     border-radius: 1em;
 }
@@ -126,3 +130,42 @@ label{
     display: flex;
     justify-content: center;
 }
+
+// ------responsive--------
+
+@media (max-width:768px) {
+    .row{
+        flex-direction: column;
+        align-items: center;
+    }
+    .contenedor-descripcion{
+        margin: 0 2em;
+    }
+}
+
+@media (max-width:376px) {
+    .titulo{
+        font-size: 1em;
+    }
+
+    .subtitulo{
+        font-size: 0.8em;
+    }
+
+    .contenedor-descripcion{
+        margin: 0 1.5em;
+        font-size: 1em;
+    }
+    
+    .parrafo-cdg{
+        font-size: 0.7em;
+    }   
+    
+    .imagenes-cdg a {
+        font-size: 1.5em;
+        padding: 0.5em;
+    }
+    
+}
+
+

@@ -478,17 +478,15 @@ a.boton-tiendaNube:hover {
   display: grid;
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
-  -webkit-column-gap: 0.5em;
-          column-gap: 0.5em;
-  row-gap: 0.5em;
+  justify-items: center;
   text-align: center;
   padding-bottom: 1em;
-  padding-left: 1.5em;
+  margin: 0 2.5em 0;
 }
 
 .contenedor-imagen {
-  width: 400px;
-  height: 350px;
+  width: 350px;
+  height: 300px;
   background: #131313;
   -webkit-box-shadow: 0 0 5px 0 rgba(24, 23, 23, 0.767);
           box-shadow: 0 0 5px 0 rgba(24, 23, 23, 0.767);
@@ -506,14 +504,12 @@ p.img-descripción {
 }
 
 .contenedor-galeria img {
-  width: 350px;
-  height: 250px;
+  width: 300px;
+  height: 200px;
   margin: 1em;
   -o-object-fit: cover;
      object-fit: cover;
   cursor: pointer;
-  -webkit-filter: blur(1px);
-          filter: blur(1px);
   -webkit-transition: -webkit-filter 0.3s ease-in;
   transition: -webkit-filter 0.3s ease-in;
   transition: filter 0.3s ease-in;
@@ -523,8 +519,6 @@ p.img-descripción {
 .contenedor-galeria img:hover {
   -webkit-filter: brightness(100%);
           filter: brightness(100%);
-  -webkit-filter: blur(0px);
-          filter: blur(0px);
   -webkit-transform: scale(1.15);
           transform: scale(1.15);
 }
@@ -536,33 +530,18 @@ p.img-descripción {
   .subtitulo-galeria {
     font-size: 1em;
   }
-  p.img-descripción {
-    font-family: "Roboto", sans-serif;
-    color: white;
-    font-size: 0.6em;
+  .contenedor-galeria {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
     margin: 0;
   }
-  .contenedor-galeria img {
-    width: 350px;
-    height: 250px;
-    margin: 1em;
-    -o-object-fit: cover;
-       object-fit: cover;
-    cursor: pointer;
-    -webkit-filter: blur(1px);
-            filter: blur(1px);
-    -webkit-transition: -webkit-filter 0.3s ease-in;
-    transition: -webkit-filter 0.3s ease-in;
-    transition: filter 0.3s ease-in;
-    transition: filter 0.3s ease-in, -webkit-filter 0.3s ease-in;
-  }
-  .contenedor-galeria img:hover {
-    -webkit-filter: brightness(100%);
-            filter: brightness(100%);
-    -webkit-filter: blur(0px);
-            filter: blur(0px);
-    -webkit-transform: scale(1.15);
-            transform: scale(1.15);
+}
+
+@media (max-width: 375px) {
+  .contenedor-galeria {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    margin: 0;
   }
 }
 
@@ -670,11 +649,10 @@ p.img-descripción {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-bottom: 5em;
+  padding-bottom: 1em;
   text-indent: 5em;
   line-height: 2em;
-  margin: 0 4em;
-  margin-bottom: 0px;
+  margin: 0 4em 0;
 }
 
 section {
@@ -690,6 +668,44 @@ section .frase {
   letter-spacing: 0.1em;
   margin-bottom: 0;
   padding: 1em;
+}
+
+@media (max-width: 768px) {
+  .titulo-aprende, .subtitulo-aprende {
+    font-size: 2em;
+  }
+  .subtitulo-aprende {
+    font-size: 1.5em;
+  }
+  .contenedor-aprende-gratis {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-bottom: 2em;
+  }
+  .contenedor-aprende-gratis > .parrafo {
+    font-size: 1.3em;
+    margin: 0 3em;
+  }
+}
+
+@media (max-width: 376px) {
+  .titulo-aprende, .subtitulo-aprende {
+    font-size: 1em;
+  }
+  .subtitulo-aprende {
+    font-size: 0.8em;
+  }
+  .contenedor-aprende-gratis {
+    padding-bottom: 1em;
+  }
+  .contenedor-aprende-gratis > .parrafo {
+    font-size: 0.7em;
+    margin: 0 2em;
+  }
+  .frase {
+    font-size: 1em;
+  }
 }
 
 /* -------------------------------Estilo CDG Project---------------------------- */
@@ -745,7 +761,7 @@ section .frase {
   color: #f6d579;
 }
 
-.parrafo-cdg {
+.parrafo-album {
   font-family: 'Courier New', Courier, monospace;
   font-size: 0.6em;
   color: #e6ad0f;
@@ -761,11 +777,10 @@ section .frase {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  text-align: justify;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-bottom: 5em;
+  padding-bottom: 1em;
   text-indent: 5em;
   line-height: 2em;
   margin: 0 4em;
@@ -775,11 +790,15 @@ section .frase {
 /*--------------- estilo Formulario de CONTACTO -------------*/
 .formulario {
   background-color: black;
-  padding: 3em 0 3em;
+  padding: 1em 0 3em;
+}
+
+.row {
+  margin: 0;
+  padding: 1em 1em 1em;
 }
 
 .contact-form {
-  width: 70%;
   border-style: inset;
   border-radius: 1em;
 }
@@ -830,6 +849,41 @@ label {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .contenedor-descripcion {
+    margin: 0 2em;
+  }
+}
+
+@media (max-width: 376px) {
+  .titulo, .subtitulo {
+    font-size: 1em;
+  }
+  .subtitulo {
+    font-size: 0.8em;
+  }
+  .contenedor-descripcion {
+    margin: 0 1.5em;
+    font-size: 1em;
+  }
+  .parrafo-cdg {
+    font-size: 0.7em;
+  }
+  .imagenes-cdg a {
+    font-size: 1.5em;
+    padding: 0.5em;
+  }
 }
 
 /* -------------------------------Estilo FOTTER---------------------------- */
