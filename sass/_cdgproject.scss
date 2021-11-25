@@ -12,7 +12,7 @@
     font: {
         family:$font-family2;
         weight: normal;
-        size: $size + 0.8em;
+        size: $size *3;
         }
 }
 
@@ -61,8 +61,10 @@
     font-family: $font-family2;
     color: $color-white;
     font-size: 1.2em;
-    justify-content: center;
-    align-items: center;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    // justify-content: center;
+    // align-items: center;
     padding-bottom: 1em;
     text-indent: 5em; 
     line-height: 2em;
@@ -154,7 +156,7 @@ label{
 
     .contenedor-descripcion{
         margin: 0 1.5em;
-        font-size: 1em;
+        font-size: 0.8em;
     }
     
     .parrafo-cdg{

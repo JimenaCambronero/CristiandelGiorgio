@@ -94,6 +94,7 @@ header label .fa-2x:hover{
     }
 }
 
+
 @media (max-width:375px) {
     header label { 
         display: block; 
@@ -188,6 +189,29 @@ header label .fa-2x:hover{
 }
 
 // ----------------Mobile---------------
+@media (max-width:415px){
+    .contenedor-portada{
+        width: 100%;
+        height: 200px;
+        background-image: url("../imagenes/imagenfondo.jpg");
+        background-repeat: no-repeat;
+        background-size: 200%;       
+    }
+    
+    .detalles img {
+        width:55%;
+        height: 55px;
+        margin:1em;
+    }
+
+    .titulo-banner{
+        font-size: 1.8em;
+    }
+    
+    .subtitulo-banner{
+        font-size: 1.3em;
+    }
+}
 
 @media (max-width:376px){
     .contenedor-portada{
@@ -230,8 +254,10 @@ header label .fa-2x:hover{
     font-family: $font-family2;
     color: $color-white;
     font-size: 1.2em;
-    justify-content: center;
-    text-align: justify;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    // justify-content: center;
+    // text-align: justify;
     align-items: center;
     padding-bottom: 5em;
     text-indent: 5em; 
@@ -254,6 +280,20 @@ header label .fa-2x:hover{
         padding-bottom: 1em;
     }
 }
+
+@media (max-width:415px){
+    .sobre-mi{
+        font-size: 1.5em;
+    }
+
+    .contenedor-presentacion{
+            font-size: 1em;
+            font-weight: 500;
+            margin: 0 2em;
+            text-indent: 0;
+        }
+}
+
 
 @media (max-width:376px){
     .sobre-mi{
