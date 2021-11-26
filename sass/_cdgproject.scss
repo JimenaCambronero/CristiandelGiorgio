@@ -72,7 +72,64 @@
     margin-bottom: 0px;
 }
     
+// ------responsive--------
 
+@media (max-width:768px) {
+    .row{
+        flex-direction: column;
+        align-items: center;
+    }
+    .contenedor-descripcion{
+        margin: 0 2em;
+    }
+}
+
+@media (max-width: 415px){
+    .titulo{
+        font-size: 1.5em;
+    }
+
+    .subtitulo{
+        font-size: 1em;
+    }
+
+    .contenedor-descripcion{
+        font-size: 1em;
+        font-weight: 500;
+        margin: 0 2em;
+        text-indent: 0;
+    }
+
+    .imagenes-cdg a {
+        font-size: 1.2em;
+        padding: 0.5em;
+    }
+}
+
+@media (max-width:376px) {
+    .titulo{
+        font-size: 1em;
+    }
+
+    .subtitulo{
+        font-size: 0.8em;
+    }
+
+    .contenedor-descripcion{
+        margin: 0 2em;
+        font-size: 0.8em;
+    }
+    
+    .parrafo-cdg{
+        font-size: 0.7em;
+    }   
+    
+    .imagenes-cdg a {
+        font-size: 1.5em;
+        padding: 0.5em;
+    }
+    
+}
 
 /*--------------- estilo Formulario de CONTACTO -------------*/
 .formulario{
@@ -133,41 +190,23 @@ label{
     justify-content: center;
 }
 
-// ------responsive--------
+@media (max-width:415px) {
+    .contacto{
+        font-size: 1.2em;
+        margin: 0;
+    }
 
-@media (max-width:768px) {
-    .row{
+    .botones{
+        display: flex;
         flex-direction: column;
         align-items: center;
+        padding-top: 0.5em;
     }
-    .contenedor-descripcion{
-        margin: 0 2em;
-    }
-}
-
+}   
 @media (max-width:376px) {
-    .titulo{
+    .contacto{
         font-size: 1em;
+        margin: 0;
     }
-
-    .subtitulo{
-        font-size: 0.8em;
-    }
-
-    .contenedor-descripcion{
-        margin: 0 1.5em;
-        font-size: 0.8em;
-    }
-    
-    .parrafo-cdg{
-        font-size: 0.7em;
-    }   
-    
-    .imagenes-cdg a {
-        font-size: 1.5em;
-        padding: 0.5em;
-    }
-    
 }
-
 

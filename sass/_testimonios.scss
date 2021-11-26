@@ -1,0 +1,36 @@
+// -----estilo Testimonios-------
+
+.titulo-testimonios {
+    font-family: $font-family2;
+    font-weight: normal;
+    color: $color-white;
+    font-size: 3em;
+    letter-spacing: 0.1em;
+    text-align: center;
+    padding: 1em;
+    margin-bottom: 0px;
+}
+span{
+    font-style: italic;
+}
+
+.subtitulo-testimonios{
+    @extend .titulo-testimonios;
+    font-size: 1.5em;
+    padding: 1em 2em 2em;
+    margin: 0;
+}
+ 
+.testimonios-tsk{
+    margin-top: 3em;
+    margin-bottom: 5em;
+}
+
+.testimonio{
+    font-size: $font-family;
+    color: $color-light-yellow;
+    font-size: 1em;
+    letter-spacing: 0.1em;
+    font-style: oblique;
+}
+

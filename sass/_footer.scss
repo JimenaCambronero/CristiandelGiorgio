@@ -69,33 +69,31 @@ h4 {
     padding-left: 0.6em;
 }
 
-
+.footer-col .links-redes li{
+    display: inline-flex;
+}
 .footer-col .links-redes a{
     display: inline-block;
-    height: 2em;
-    width: 2em;
-    background-color: rgba(255, 196, 0, 0.2);
-    margin: 0 1em 1em 0;
+    font-size: 1em;
+    margin: 0.5em;
     text-align: center;
-    line-height: 2.2em;
-    border-radius: 50px;
     color: $color-white;
     transition: all 0.5s ease;
 }
 
 .footer-col .links-redes a:hover{
     color: rgb(255, 196, 0);
-    background-color: rgb(255, 255, 255);
 }
 
 .copy{
     display: flex;
     justify-content: space-around;
+    margin-top: 3em;
 }
 
 p.copy-parrafo {
     font-family:'Courier New', Courier, monospace;
-    font-size: 0.6em;
+    font-size: 0.8em;
     letter-spacing: 0.1em;
     color: $color-light-yellow;
     margin-bottom: 0;
@@ -104,6 +102,16 @@ p.copy-parrafo {
 .menu-footer a:hover{
     color: rgb(245, 203, 92);
 } 
+
+.copy-links{
+    display: flex;
+    justify-content: center;
+        a{
+        font-size: 1.2em;
+        color: $color-light-yellow;
+        margin: 0 0.5em;
+    }
+}
 
 // Mobile ------
 @media (max-width:376px) {

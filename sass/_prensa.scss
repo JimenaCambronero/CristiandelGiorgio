@@ -11,7 +11,7 @@
     margin-bottom: 0px;
 }
 
-.parrafo-prensa{
+.subtitulo-prensa{
     @extend .titulo-prensa;
     font-size: 1.5em;
     padding: 0 0 0.9em;
@@ -22,6 +22,7 @@
 .container{
     width: 90%;
 }
+
 .card{
     background-color: $color-black;
 }
@@ -60,4 +61,21 @@
             border:none;
             font-size: 0.7em;
         }
+}
+
+// medias 
+@media (max-width:415px){
+    .titulo-prensa{
+        font-size: 1.5em;
+    }
+
+    .subtitulo-prensa{
+        font-size: 1em;
+    }
+}
+
+@media (max-width:375px) {
+    .titulo-prensa{
+        font-size: 1em;
+    }   
 }
