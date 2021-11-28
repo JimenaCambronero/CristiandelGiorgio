@@ -72,9 +72,13 @@ header label .fa-2x:hover {
     display: block;
   }
   .menu {
+    position: absolute;
     background: black;
-    width: 100%;
+    width: 50%;
     z-index: 1;
+    margin-left: -50%;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
   }
   .menu ul {
     -webkit-box-orient: vertical;
