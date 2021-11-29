@@ -114,6 +114,20 @@ p.copy-parrafo {
 }
 
 // Mobile ------
+@media (max-width:414px){
+    .contenedor-footer {
+        padding: 1em 2em 0;
+    }
+
+    .copy{
+        margin-top: 1.5em;
+        .copy-parrafo{
+            margin: 0 1.5em;
+            font-size: 0.5em;
+        }
+    }
+}
+
 @media (max-width:376px) {
     .contenedor-footer{
         padding: 1em 1em 0;

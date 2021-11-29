@@ -1,7 +1,7 @@
 {
   "name": "pag.-cdg",
   "version": "1.0.0",
-  "description": "",
+  "description": " Pagina para Cristian del Giorgio. Tecladista, Compositor, arreglador y creador del método de enseñanza The secret Key. La misma fue creada como Proyecto Final para el curso de Desarrollo Web dictado por Coder House ",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
