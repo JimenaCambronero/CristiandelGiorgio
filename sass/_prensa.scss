@@ -64,11 +64,20 @@
 }
 
 // medias 
+
+@media (max-width:1024px){
+    .titulo-prensa{
+        font-size: 2em;
+    }    
+    .subtitulo-prensa {
+        font-size: 1.5em;
+    }
+}
+
 @media (max-width:415px){
     .titulo-prensa{
         font-size: 1.5em;
     }
-
     .subtitulo-prensa{
         font-size: 1em;
     }

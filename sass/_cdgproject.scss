@@ -4,7 +4,7 @@
 
 // se aplica sass - operaciones/
 
-.titulo{
+.titulo-cdg{
     color: $color-white;
     letter-spacing: 0.1em;
     padding-top: 0.9em ;
@@ -16,8 +16,8 @@
         }
 }
 
-.subtitulo{ 
-    @extend .titulo;
+.subtitulo-cdg{ 
+    @extend .titulo-cdg;
     font-size: 1.5em;
     padding: 0.5em 0 0.8em;
     margin: 0;
@@ -63,8 +63,6 @@
     font-size: 1.2em;
     font-weight: 600;
     letter-spacing: 0.1em;
-    // justify-content: center;
-    // align-items: center;
     padding-bottom: 1em;
     text-indent: 5em; 
     line-height: 2em;
@@ -73,6 +71,15 @@
 }
     
 // ------responsive--------
+
+@media (max-width:1024px){
+    .titulo-cdg{
+        font-size: 2em;
+    }
+    .subtitulo-cdg {
+        font-size: 1.5em;
+    }
+}
 
 @media (max-width:768px) {
     .row{
@@ -85,11 +92,11 @@
 }
 
 @media (max-width: 415px){
-    .titulo{
+    .titulo-cdg{
         font-size: 1.5em;
     }
 
-    .subtitulo{
+    .subtitulo-cdg{
         font-size: 1em;
     }
 
@@ -107,11 +114,11 @@
 }
 
 @media (max-width:376px) {
-    .titulo{
+    .titulo-cdg{
         font-size: 1em;
     }
 
-    .subtitulo{
+    .subtitulo-cdg{
         font-size: 0.8em;
     }
 

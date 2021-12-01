@@ -63,11 +63,11 @@ p.img-descripcion{
 // ------responsive--------
 @media (max-width:1024px){
     .titulo-galeria {
-        font-size: 1.8em;
+        font-size: 2em;
     }
 
     .subtitulo-galeria {
-        font-size: 1.2em;
+        font-size: 1.3em;
     }
 
     .contenedor-galeria{ 
@@ -76,13 +76,14 @@ p.img-descripcion{
     }
 }
 
+
 @media (max-width:768px){
     .titulo-galeria {
-        font-size: 2em;
+        font-size: 1.5em;
     }
 
     .subtitulo-galeria {
-        font-size: 1em;
+        font-size: 1.2em;
     }
 
     .contenedor-galeria {
