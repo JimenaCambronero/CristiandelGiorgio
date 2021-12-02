@@ -28,7 +28,7 @@ Disfrute mucho haciendo este Proyecto, aún le falta; pero a medida que vaya apr
 
 📌Ver Página 
 
-[Cristian del Giorogio @GithubPages](https://jimenacambronero.github.io/CristiandelGiorgio/)
+[Cristian del Giorgio @GithubPages](https://jimenacambronero.github.io/CristiandelGiorgio/)
 
 📌 Instalación
 
