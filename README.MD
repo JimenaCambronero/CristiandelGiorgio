@@ -1,6 +1,6 @@
 ![](https://d2r9epyceweg5n.cloudfront.net/stores/001/630/289/products/img_976511-a791f90bbdf22d3e0a16172307695940-640-0.jpg)
 
-# Cristian del Giorgio. Tecladista 🎹Compositor 🎼
+# Cristian del Giorgio. Tecladista 🎹 Compositor 🎼
 
 
 Esta página ha sido creada para el Proyecto Final del curso de Desarrollo Web 🖥  dictado por @CoderHouse.
@@ -26,11 +26,11 @@ Disfrute mucho haciendo este Proyecto, aún le falta; pero a medida que vaya apr
 *Este proyecto fue construido con HTML, SASS y se incluyeron algunos elementos de Bootstrap & AOS elements.*
 
 
-##📌Ver Página
+📌Ver Página
 
 [Cristian del Giorogio @GithubPages](https://jimenacambronero.github.io/CristiandelGiorgio/)
 
-##📌 Instalación
+📌 Instalación
 
 **Repositorio de clonación..**
 
@@ -59,12 +59,12 @@ $ npm install
 $ npm run watch-css
 ```
 
-##📌 Ejecución
+📌 Ejecución
 
 **Puede ejecutar el proyecto utilizando el complemento [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) plugin on [VSC](https://code.visualstudio.com/?wt.mc_id=vscom_downloads)**
 
 
-## 📌Contribuciones
+📌Contribuciones
 
 **Las solicitudes de extracción son bienvenidas. Para cambios importantes, primero abra un problema para discutir qué le gustaría cambiar.**
 
