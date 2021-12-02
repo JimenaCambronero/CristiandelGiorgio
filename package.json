@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/JimenaCambronero/CristiandelGiorgio/issues"
   },
-  "homepage": "https://github.com/JimenaCambronero/CristiandelGiorgio#readme"
+  "homepage": "https://github.com/JimenaCambronero/CristiandelGiorgio#readme",
+  "dependencies": {
+    "editor.md": "^1.5.0"
+  }
 }
